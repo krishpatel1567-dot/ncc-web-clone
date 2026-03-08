@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCC - IITR</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+    </style>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+    <div class="main font-poppins">
+        <header class="relative flex flex-col py-2 px-3 bg-[#161982] z-50 md:space-y-4 justify-center sticky top-0 h-z[413px] md:h-[165px]">
+
+            <div class="pic flex md:justify-between items-center top-2 relative md:pt-13">
+                <span class="ncclogo flex space-x-6 space-y-1.5">
+                    <img class="w-[53px] h-[73px] md:w-[60px] md:h-[89px]"
+                        src="https://ncc.iitr.ac.in/images/NCC_Logo.png" alt="">
+                    <div class="hidden md:flex flex-col bottom-0 font-semibold text-[30px] text-white mt-1">
+                        <span class=" text-4xl">राष्ट्रीय कैडेट कोर</span>
+                        <span>National Cadet Corps, IIT Roorkee</span>
+                    </div>
+
+                </span>
+                <span class="iitrlogo relative pb-0.5 ">
+                    <img class="h-[73px] w-[75.5px]" src="https://ncc.iitr.ac.in/images/IITR_Logo.png" alt="">
+                </span>
+                <div class="flex items-center justify-center text-white text-3xl md:hidden absolute right-0">
+                    <button id="menuBtn" >☰</button>
+                </div>
+            </div>
+
+            <div id="navMenu" class="absolute md:static right-0 top-full w-[220px] md:w-full bg-[#161982] text-white transform -translate-y-4 opacity-0 md:opacity-100 md:left-0 md:items-center md:bg-transparent pointer-events-none transition-all duration-300">
+
+                <ul class="flex flex-col md:text-2xl md:justify-between md:flex-row md:gap-30 gap-4 p-4">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Events</li>
+                    <li>Blogs</li>
+                    <li>FAQs</li>
+                    <li>Annual Reports</li>
+                </ul>
+
+            </div>
+
+        </header>
+
+        <div class="content ">
+            <div id="slider" class="relative w-full h-[220px] sm:h-[350px] md:h-[500px] lg:h-[630px] overflow-hidden">
+
+                <div id="slides" class="flex w-full h-full transition-transform duration-700 ease-in-out">
+
+                    <img src="https://ncc.iitr.ac.in/images/home/carousel1.jpg"
+                        class="w-full h-full object-cover flex-shrink-0">
+
+                    <img src="https://ncc.iitr.ac.in/images/home/carousel2.jpg"
+                        class="w-full h-full object-cover flex-shrink-0">
+
+                    <img src="https://ncc.iitr.ac.in/images/home/carousel3.jpg"
+                        class="w-full h-full object-cover flex-shrink-0">
+
+                    <img src="https://ncc.iitr.ac.in/images/home/carousel4.jpg"
+                        class="w-full h-full object-cover flex-shrink-0">
+
+                    <img src="https://ncc.iitr.ac.in/images/home/carousel5.jpg"
+                        class="w-full h-full object-cover flex-shrink-0">
+
+                </div>
+
+            </div>
+
+            <div class="s1 bg-[linear-gradient(180deg,_#d3dff1_0%,_#d3dff1_35%,_#ffffff_100%)]">
+
+                <div
+                    class="seperator flex justify-around h-[140px] w-auto md:w-[412px] md:h-[160px] md:w-full items-center text-[28px] md:text-[38px] md:text-5xl top-0 font-medium">
+                    <div class="line h-[4px] w-[19%] md:w-[33%] bg-[#053d4d]"></div>
+                    <span>OUR AIM</span>
+                    <div class="line h-[4px] w-[19%] md:w-[33%] bg-[#053d4d]"></div>
+                </div>
+
+                <div class="maininfo flex flex-col md:flex-row justify-center items-center md:justify-normal md:item">
+                    <img class="h-[228px] w-[330px] md:w-[445px] md:h-[307px]"
+                        src="https://ncc.iitr.ac.in/images/home/Aim.jpg" alt="">
+                    <div class="text-base text-wrap p-[15px]">
+                        <span>The Aims of the NCC laid out in 1988 have stood the test of time and continue to meet the
+                            requirements expected of it in the current socio-economic scenario of the country</span>
+                        <ul class="list-disc ml-8">
+                            <li>To Create a Human Resource of Organized, Trained and Motivated Youth, To Provide
+                                Leadership in all Walks of life and be Always Available for the Service of the Nation.
+                            </li>
+                            <li>To Provide a Suitable Environment to Motivate the Youth to Take Up a Career in the Armed
+                                Forces.</li>
+                            <li>To Develop Character, Comradeship, Discipline, Leadership, Secular Outlook, Spirit of
+                                Adventure, and Ideals of Selfless Service amongst the Youth of the Country.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="s2">
+
+                <div
+                    class="seperator flex justify-around h-[140px] w-auto md:w-[412px] md:h-[160px] md:w-full items-center text-[28px] md:text-[38px] md:text-5xl top-0 font-medium">
+                    <div class="line h-[4px] w-[19%] md:w-[33%] bg-[#053d4d]"></div>
+                    <span>OUR PLEDGE</span>
+                    <div class="line h-[4px] w-[19%] md:w-[33%] bg-[#053d4d]"></div>
+                </div>
+
+                <div class="flex items-center gap-2 flex-col md:flex-row justify-center md:justify-normal md:item">
+                    <img class="h-[193px] w-[330px] md:h-[317px] md:w-[542px]"
+                        src="https://ncc.iitr.ac.in/images/home/Pledge.png" alt="">
+                    <span>We the cadets of the National Cadet Corps, do solemnly pledge that we shall always uphold the
+                        unity of India. We resolve to be disciplined and responsible citizens of our nation. We shall
+                        undertake positive community service in the spirit of selflessness and concern for our fellow
+                        beings.</span>
+                </div>
+
+            </div>
+
+            <div class="s3 bg-[linear-gradient(180deg,_#ffffff_0%,_#ffffff_35%,_#d3dff1_100%)]">
+
+                <div
+                    class="seperator flex justify-around h-[140px] w-auto md:w-[412px] md:h-[160px] md:w-full items-center text-[28px] md:text-[38px] md:text-5xl top-0 font-medium">
+                    <div class="line h-[4px] w-[19%] md:w-[33%] bg-[#053d4d]"></div>
+                    <span>NCC SONG</span>
+                    <div class="line h-[4px] w-[19%] md:w-[33%] bg-[#053d4d]"></div>
+                </div>
+
+                <div class="flex justify-center items-center space-y-26 text-[16px] ">
+                    <p class="text-center">
+                        Hum Sab Bharatiya Hain, Hum Sab Bharatiya Hain <br>
+                        Apni Manzil Ek Hai,<br>
+                        Ha, Ha, Ha, Ek Hai,<br>
+                        Ho, Ho, Ho, Ek Hai.<br>
+                        Hum Sab Bharatiya Hain. <br>
+                        Kashmir Ki Dharti Rani Hai,<br>
+                        Sartaj Himalaya Hai, <br>
+                        Saadiyon Se Humne Isko Apne Khoon Se Pala Hai <br>
+                        Desh Ki Raksha Ki Khatir Hum Shamshir Utha Lenge, <br>
+                        Hum Shamshir Utha Lenge. <br>
+
+                        Bikhre Bikhre Taare Hain Hum Lekin Jhilmil Ek Hai, <br>
+                        Ha, Ha, Ha, Ek Hai <br>
+                        Hum Sab Bharatiya Hai. <br>
+                        Mandir Gurudwaare Bhi Hain Yahan <br>
+                        Aur Masjid Bhi Hai Yahan <br>
+                        Girija Ka Hai Ghariyaal Kahin <br>
+                        Mullah ki Kahin Hai Ajaan <br>
+
+                        Ek Hee Apna Ram Hain, Ek hi Allah Taala Hai, <br>
+                        Ek Hee Allah Taala Hain, Raang Birange Deepak Hain Hum, <br>
+                        lekin Jagmag Ek Hai, Ha Ha Ha Ek Hai, Ho Ho Ho Ek Hai. <br>
+                        Hum Sab Bharatiya Hain, Hum Sab Bharatiya Hain. <br>
+                    </p><span></span>
+                </div>
+            </div>
+        </div>
+
+        <footer class="flex flex-col md:flex-row bg-[#212487f2] gap-2 md:gap-10 md:gap-16 px-6 py-6 md:justify-around">
+
+
+            <div class="pt-5 text-base text-white flex flex-col space-y-2 md:space-y-5 md:w-[20%]">
+                <span class="flex flex-col text-xl border-b-2">Contact Us:</span>
+                <div class="flex gap-2 items-center md:items-start md:flex-col">
+                    <div class="flex gap-2">
+
+                        <img width="32px" src="https://ncc.iitr.ac.in/images/svgs/phoneIcon.svg" alt="">
+                        <ul>
+                            <li>+91 9798999936</li>
+                            <li>+91 6299930337</li>
+                            <li>+91 9828483211</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img src="https://ncc.iitr.ac.in/images/svgs/emailIcon.svg" alt="">
+                        <a href="mailto:ncc@iitr.ac.in">ncc@iitr.ac.in</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pt-5 text-base text-white flex flex-col space-y-2 md:space-y-5 md:w-[20%]">
+                <span class="border-b-2 text-xl">Social Media:</span>
+                <div class="flex gap-3">
+                    <a href="https://www.facebook.com/ncc.iitr">
+                        <span class="text-[#1877F2] transition-colors">
+                            <img src="https://ncc.iitr.ac.in/images/svgs/facebookIcon.svg" alt="">
+                        </span>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCrx5OBkbdv5dldJBDXFfJbA">
+                        <span>
+                            <img src="https://ncc.iitr.ac.in/images/svgs/youtubeIcon.svg" alt="">
+                        </span>
+                    </a>
+
+                    <a href="https://www.instagram.com/ncc.iitr/">
+                        <span>
+                            <img width="44px" src="https://ncc.iitr.ac.in/images/svgs/instagram.png" alt="">
+                        </span>
+                    </a>
+
+                    <a href="https://goo.gl/maps/73UGFeqZSd5HjjZP9">
+                        <span>
+                            <img width="44px" src="https://ncc.iitr.ac.in/images/svgs/maps.png" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="pt-5 text-base text-white flex flex-col md:space-y-3 md:w-[20%]">
+                <span class="border-b-2 text-xl">Website:</span>
+                <div class=" mt-2 md:mt-0">
+                    <a class="flex items-center" href="https://indiancc.nic.in/"><img
+                            src="https://ncc.iitr.ac.in/images/svgs/websiteIcon.svg" alt="">NCC Official</a>
+
+                    <a class="flex items-center" href="https://www.iitr.ac.in/"><img
+                            src="https://ncc.iitr.ac.in/images/svgs/websiteIcon.svg" alt="">IIT Roorkee</a>
+                </div>
+            </div>
+
+
+            <div class="pt-5 text-base text-white flex flex-col space-y-2  md:w-[20%]">
+                <span class="border-b-2 text-xl">Address:</span>
+                <span class="md:mt-2">
+
+                    10 UK Bn NCC, IIT Roorkee Roorkee, Haridwar Uttarakhand, 247667
+                </span>
+            </div>
+        </footer>
+        <div class="copyright bg-[#363131] text-center py-2  text-white">© Copyright 2024 - NCC IIT Roorkee | All Right
+            Reserved</div>
+    </div>
+</body>
+<script>
+    const slides = document.getElementById("slides");
+    const totalSlides = slides.children.length;
+
+    let index = 0;
+
+    function nextSlide() {
+        index++;
+
+        if (index >= totalSlides) {
+            index = 0;
+        }
+
+        slides.style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    setInterval(nextSlide, 4000);
+
+
+    const btn = document.getElementById("menuBtn");
+    const menu = document.getElementById("navMenu");
+
+    btn.addEventListener("click", () => {
+
+        menu.classList.toggle("opacity-0");
+        menu.classList.toggle("-translate-y-4");
+        menu.classList.toggle("pointer-events-none");
+
+    });
+</script>
+
+</html>
